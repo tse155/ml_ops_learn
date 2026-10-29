@@ -1,0 +1,12 @@
+# pull official base image made by Jupyter foundation 
+FROM jupyter/base-notebook:latest
+
+# set working directory
+WORKDIR /home/jovyan/work
+
+
+# install dependencies
+RUN pip install --upgrade pip
+COPY ./tests-requirements.txt .
+RUN pip install --no-cache-dir -r tests-requirements.txt
+

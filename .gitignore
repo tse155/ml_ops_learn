@@ -1,0 +1,9 @@
+__pycache__
+env
+.env*
+*.sqlite3
+.env.dev
+.env.prod.local
+.coverage
+reference.txt
+jupyter-container-ref.txt
